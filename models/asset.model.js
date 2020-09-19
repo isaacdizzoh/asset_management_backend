@@ -24,8 +24,8 @@ Asset.create = (newAsset, result) => {
     });
 };
 
-Asset.findById = (assetId, result) => {
-    sql.query("SELECT * FROM asset_info WHERE asset_code = ?", assetId, (err, res) => {
+Asset.findById = (assetCode, result) => {
+    sql.query("SELECT * FROM asset_info WHERE asset_code = ?", assetCode, (err, res) => {
         if (err) {
             result(err, null);
             return;

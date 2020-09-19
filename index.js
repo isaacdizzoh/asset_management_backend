@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 })
 
 require('./routes/user.routes')(app);
+require('./routes/asset.routes')(app);
 
 app.listen(port, () => {
     console.log(`Server started on ${port}`);
