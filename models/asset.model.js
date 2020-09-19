@@ -21,7 +21,7 @@ User.create = (newUser, result) => {
 };
 
 User.findById = (userId, result) => {
-    sql.query("SELECT * FROM user_info WHERE iser_id = ?", userId, (err, res) => {
+    sql.query("SELECT * FROM user_info WHERE user_id = ?", userId, (err, res) => {
         if (err) {
             result(err, null);
             return;
