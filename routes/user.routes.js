@@ -1,5 +1,5 @@
 module.exports = app => {
-    const users = require('../controllers/asset.controller');
+    const users = require('../controllers/user.controller');
 
     //Adding new User information
     app.post('/users', users.create);

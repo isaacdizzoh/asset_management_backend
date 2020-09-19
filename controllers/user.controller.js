@@ -1,4 +1,4 @@
-const User = require('../models/asset.model');
+const User = require('../models/user.model');
 
 //Create and save a new User information
 exports.create = (req, res) => {
