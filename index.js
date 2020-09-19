@@ -17,6 +17,8 @@ app.get("/", (req, res) => {
     res.json({ message : "Welcome To Asset Management API"});
 })
 
+require('./routes/asset.routes')(app);
+
 app.listen(port, () => {
     console.log(`Server started on ${port}`);
 });
