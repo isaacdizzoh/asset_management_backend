@@ -1,2 +1,2 @@
 # asset_management_backend
-An application form managing Asset in an organization.
+An application for managing Asset in an organization.
